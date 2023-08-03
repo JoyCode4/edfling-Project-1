@@ -1,3 +1,4 @@
+  // eslint-disable-next-line
 import React from "react";
 import "./App.css";
 import Page57 from "./Pages/Page57";
@@ -21,6 +22,7 @@ import Page18 from "./Pages/Page18";
 
 
 function App() {
+
   return (
     <>
       <BrowserRouter>

@@ -1,7 +1,7 @@
 import React from "react";
 import SideBarCourse from "../Components/SidebarCourses";
-import Navbar from "../Components/Navbar";
-import PageEnd from "../Components/PageEnd";
+// import Navbar from "../Components/Navbar";
+// import PageEnd from "../Components/PageEnd";
 import CertificateBanner from "../Components/CertificateBanner";
 
 const Page68 = () => {
