@@ -98,7 +98,7 @@ const Navbar = () => {
         {!login ? (
           <div className="right w-1/5 hidden md:flex  justify-end">
             <div className="h-full">
-              <a className=" hover:cursor-pointer login h-full">Login</a>
+              <a href="/" className=" hover:cursor-pointer login h-full">Login</a>
             </div>
             <button className="signup py-1 px-3.5 ml-5">Sign Up</button>
           </div>
@@ -140,7 +140,7 @@ const Navbar = () => {
                 fill="#215D4F"
               />
             </svg>
-            <img src={profile}/>
+            <img alt={""} src={profile}/>
           </div>
         )}
 
@@ -222,7 +222,7 @@ const Navbar = () => {
               
               {!login ? (<>
               <li className="h-full">
-                <a className=" hover:cursor-pointer login ">Login</a>
+                <a href="/" className=" hover:cursor-pointer login ">Login</a>
               </li>
               <li>
               <button className="signup py-1 px-3.5 ml-0 my-1">

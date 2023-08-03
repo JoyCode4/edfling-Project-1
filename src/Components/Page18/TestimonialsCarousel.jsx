@@ -61,7 +61,7 @@ function TestimonialsCarousel() {
   };
 
   return (
-    <div className="relative max-w-5xl p-5 sm:p-6 overflow-hidden">
+    <div className="relative max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto p-5 sm:p-6 overflow-hidden">
       <div
         className="flex transition-transform duration-300 ease-in-out"
         style={{
