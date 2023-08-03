@@ -33,7 +33,7 @@ function App() {
           <Route path="/page61" element={<Page61 />} />
           <Route path="/page19" element={<Page19 />} />
           <Route path="/page20" element={<Page20 />} />
-          <Route path="/Page18" element={<Page18 />} />
+          <Route path="/" element={<Page18 />} />
           <Route path='/imac211' element={<Imac211 />} />
           <Route path="/page68" element={<Page68 />} />
           <Route path="/page69" element={<Page69 />} />
