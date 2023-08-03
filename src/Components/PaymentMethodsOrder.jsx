@@ -6,7 +6,7 @@ import netBanking from "../images/page26_27/net-banking.svg";
 
 const PaymentMethodsOrder=()=>{
     return (
-        <div className='left Pay-Meth mx-10 w-[540px] mr-32'>
+        <div className='left w-full Pay-Meth mx-1 sm:mx-3 2xl:mx-10 max-w-[540px] 2xl:mr-32'>
           <h1 className='text-start font-semibold text-2xl -my-1 font-poppins'>Payment Methods</h1>
           <p className='font-poppins mt-10 text-gray-600 text-xs'>Ut non tempor sit facilisi pretium enim eu pharetra, netus elementum massa malesuada cursus sit in urna blandit viverra at vel, massa dignissim nam et</p>
           <div className='radio-btns'>

@@ -11,7 +11,7 @@ import Page20 from "./Pages/Page20";
 import Imac211 from './Pages/Imac211';
 import Page68 from "./Pages/Page68";
 import Page69 from "./Pages/Page69";
-import Page26_27 from "./Pages/Page26_27";
+import Page26 from "./Pages/Page26";
 import Page1 from "./Pages/Page1";
 import Login from "./Pages/Login/index";
 import Signup from "./Pages/Signup/index";
@@ -38,8 +38,8 @@ function App() {
           <Route path="/page68" element={<Page68 />} />
           <Route path="/page69" element={<Page69 />} />
           <Route path="/page1" element={<Page1 />} />
-          <Route path="/page26" element={<Page26_27 type={1}/>} />
-          <Route path="/page27" element={<Page26_27 type={2}/>} />
+          <Route path="/page26" element={<Page26 type={1}/>}/>
+          <Route path="/page27" element={<Page26 type={2}/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
             

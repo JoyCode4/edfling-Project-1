@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       screens: {
         md: "768px",
+        mds:"816px",
+        mdl:"984px"
       },
       colors: {
         "raw-sienna": "#CB8461",
