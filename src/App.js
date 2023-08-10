@@ -5,6 +5,7 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Page19 from "./Pages/Page19";
 import Page58 from "./Pages/Page58";
 import Page59 from "./Pages/Page59";
+import Page56 from "./Pages/Page56";
 import Page60 from "./Pages/Page60";
 import Page61 from "./Pages/Page61";
 import Page20 from "./Pages/Page20";
@@ -38,6 +39,7 @@ function App() {
           <Route path="/page68" element={<Page68 />} />
           <Route path="/page69" element={<Page69 />} />
           <Route path="/page1" element={<Page1 />} />
+          <Route path="/page56" element={<Page56 />}/>
           <Route path="/page26" element={<Page26 type={1}/>}/>
           <Route path="/page27" element={<Page26 type={2}/>} />
           <Route path="/login" element={<Login />} />
