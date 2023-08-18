@@ -9,7 +9,7 @@ import PaymentMethodsOrder from '../Components/PaymentMethodsOrder';
 const Page26 = (props) => {
   return (
     <div className='flex min-h-[920px] w-screen-xl justify-center items-center flex-wrap'>
-        <div className='flex flex-wrap justify-center mt-4 mx-0'>
+        <div className='flex flex-wrap justify-center mt-4 ml-24 pl-24 sm:ml-0 sm:pl-0'>
           <div className='flex justify-center'>
             <div className='image'>
                 <img src={arrow} alt='&lt;'/>
