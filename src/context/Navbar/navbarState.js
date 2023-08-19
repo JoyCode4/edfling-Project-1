@@ -2,7 +2,7 @@ import { useState } from "react";
 import NavbarContext from "./navbarContext";
 
 const NavbarState = (props)=>{
-    const [login,setLogin] = useState(true);
+    const [login,setLogin] = useState(false);
     return(
         <NavbarContext.Provider value={{login,setLogin}}>
             {props.children}
