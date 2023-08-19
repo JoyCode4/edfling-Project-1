@@ -4,9 +4,12 @@ import logo from "../images/navbar/logo.png";
 import { Menu, X } from "lucide-react";
 import profile from "../images/page57-61/Ellipse 215.png";
 import NavbarContext from "../context/Navbar/navbarContext";
+import Notification from '../Components/Notification';
+import ProfileDetails from '../Components/ProfileDetails';
+import SideBar from "./SideBar";
 const Navbar = () => {
   const [act, setAct] = useState("Home");
-  const {login} = useContext(NavbarContext);
+  const {login,setLogin} = useContext(NavbarContext);
   const [isopen, setOpen] = useState("false");
   const togglenavbar = () => {
     setOpen(!isopen);
@@ -20,6 +23,7 @@ const Navbar = () => {
 
   const toggleNotification = ()=>{
     const notification=document.getElementById("notification");
+    console.log(notification);
     notification.classList.toggle("block");
     notification.classList.toggle("hidden");
   }
@@ -163,6 +167,7 @@ const Navbar = () => {
             </svg>
             <img onClick={toggleProfile} alt={""} src={profile}/>
           </div>
+          
         )}
 
         {/* for screen smaller than 768px */}
@@ -259,6 +264,18 @@ const Navbar = () => {
           </div>
         )}
       </div>
+      <div className="relative z-3">
+        <div id='notification' className='absolute -top-2 -right-1 md:right-0 hidden md:w-[450px]'>
+            <Notification/>
+        </div>
+        <div id='profileDetails' className='absolute right-0 -top-2 hidden sm:top-0'>
+            <ProfileDetails/>
+        </div>
+        <div id="sidebarL" className='absolute -top-4 left-0 hidden'>
+            <SideBar/>
+        </div>
+      </div>
+        
     </>
   );
 };
