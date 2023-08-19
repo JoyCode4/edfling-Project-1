@@ -1,24 +1,27 @@
-import React from "react";
-import { useState } from "react";
+import React,{useContext,useState} from "react";
 import "../CSS/Navbar.css";
 import logo from "../images/navbar/logo.png";
 import { Menu, X } from "lucide-react";
 import profile from "../images/page57-61/Ellipse 215.png";
+import NavbarContext from "../context/Navbar/navbarContext";
 const Navbar = () => {
   const [act, setAct] = useState("Home");
-
+  const {login} = useContext(NavbarContext);
   const [isopen, setOpen] = useState("false");
   const togglenavbar = () => {
     setOpen(!isopen);
     console.log(isopen);
   };
 
-  let login = false;
-
   return (
     <>
       <div className="navbar px-5 sticky top-0 w-full  items-center justify-between pt-2 z-50 flex flex-wrap bg-white shadow-md">
         {/* left portion of navbar  */}
+        <div className={"flex flex-col md:hidden"}>
+          <button onClick={togglenavbar} className="">
+            {!isopen ? <X /> : <Menu />}
+          </button>
+        </div>
         <div className="left border-1  w-auto md:w-1/5 ">
           <img src={logo} alt="logo" className="h-9 hover:cursor-pointer"></img>
         </div>
@@ -145,8 +148,8 @@ const Navbar = () => {
         )}
 
         {/* for screen smaller than 768px */}
-        <div className="flex flex-col md:hidden">
-          <button onClick={togglenavbar} className=""> 
+        <div className={login?"flex flex-col hidden":"flex flex-col md:hidden"}>
+          <button onClick={togglenavbar} className="">
             {!isopen ? <X /> : <Menu />}
           </button>
         </div>

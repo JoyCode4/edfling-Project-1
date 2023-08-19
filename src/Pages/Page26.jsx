@@ -5,7 +5,6 @@ import PaymentOrderBreakdown from '../Components/PaymentOrderBreakdown';
 import PaymentMethodsOrder from '../Components/PaymentMethodsOrder';
 
 
-
 const Page26 = (props) => {
   return (
     <div className='flex min-h-[920px] w-screen-xl justify-center items-center flex-wrap'>

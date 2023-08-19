@@ -6,6 +6,7 @@ import TrendingCoursesCarousel from "../Components/Page18/TrendingCoursesCarusel
 import TestimonialsCarousel from "../Components/Page18/TestimonialsCarousel";
 import WhyEdflingCard from "../Components/Page18/WhyEdflingCard";
 import CourseCategoryCard from "../Components/Page18/CourseCategoryCard";
+
 //Assests
 import Pic1 from "../images/page18/Pic1.png";
 import Pic2 from "../images/page18/Pic2.png";
