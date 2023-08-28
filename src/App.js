@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Page18 from "./Pages/Page18";
 import Page56 from "./Pages/Page56";
+import TeacherSide from "./Pages/TeacherSide";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path="/page26" element={<Page26 type={1}/>}/>
               <Route path="/page27" element={<Page26 type={2}/>} />
               <Route path="/page56" element={<Page56/>} />
+              <Route path="/teacher/*" element={<TeacherSide/>} />
             </Routes>
           <Footer/>
         </BrowserRouter>
