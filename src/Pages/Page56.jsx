@@ -11,7 +11,7 @@ import Notification from '../Components/Notification';
 import NavbarContext from '../context/Navbar/navbarContext';
 import ProfileDetails from '../Components/ProfileDetails';
 const Page56 = () => {
-    const {setLogin,setToggle}=useContext(NavbarContext);
+    const {setLogin,setTeacherSide}=useContext(NavbarContext);
     setLogin(true);
     
   return (

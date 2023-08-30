@@ -5,7 +5,7 @@ const NavbarState = (props)=>{
     const [login,setLogin] = useState(false);
     const [teacherSide,setTeacherSide] = useState(false);
     return(
-        <NavbarContext.Provider value={{login,setLogin}}>
+        <NavbarContext.Provider value={{login,setLogin,teacherSide,setTeacherSide}}>
             {props.children}
         </NavbarContext.Provider>
     )

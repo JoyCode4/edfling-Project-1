@@ -9,7 +9,7 @@ import ProfileDetails from '../Components/ProfileDetails';
 import SideBar from "./SideBar";
 const Navbar = () => {
   const [act, setAct] = useState("Home");
-  const {login,setLogin} = useContext(NavbarContext);
+  const {login,teacherSide} = useContext(NavbarContext);
   const [isopen, setOpen] = useState("false");
   const togglenavbar = () => {
     setOpen(!isopen);
@@ -35,7 +35,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className="navbar px-1 sm:px-5 sticky top-0 w-full  items-center justify-between pt-2 z-50 flex flex-wrap bg-white shadow-md">
+      <div className={(!teacherSide)?"navbar px-1 sm:px-5 sticky top-0 w-full  items-center justify-between pt-2 z-50 flex flex-wrap bg-white shadow-md":"hidden"}>
         {/* left portion of navbar  */}
         <div className={login?"flex flex-col md:hidden":"flex flex-col hidden"}>
           <button onClick={toggleClick} className="">

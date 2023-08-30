@@ -8,8 +8,8 @@ import subtract from "../../images/teacherSide/Subtract.svg";
 import arrow from "../../images/teacherSide/Arrow.svg";
 import arrowl from "../../images/teacherSide/Arrow1.svg";
 import arrowr from "../../images/teacherSide/Arrow2.svg";
-
 import search from "../../images/teacherSide/search.svg";
+
 
 const LeaveTypeList = () => {
   return (
