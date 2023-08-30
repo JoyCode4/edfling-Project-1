@@ -7,7 +7,7 @@ import search from "../../images/teacherSide/search.svg";
 const ApproveLeaveRequests = () => {
   return (
     <div>
-      <div className='mx-3 w-full'>
+      <div className='-mx-5 w-full'>
                 <div className='my-3 flex flex-wrap justify-between items-center'>
                     <p className='text-[#CB8461] font-poppins text-2xl font-medium mr-3'>Approve Leave Request</p>
                     <div className='border-b-2 flex w-32 my-3 mx-2'>

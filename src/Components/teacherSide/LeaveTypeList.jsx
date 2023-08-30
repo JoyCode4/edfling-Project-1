@@ -14,7 +14,7 @@ import search from "../../images/teacherSide/search.svg";
 const LeaveTypeList = () => {
   return (
     <div>
-      <div className='mx-3'>
+      <div className='mx-3 w-full'>
                 <div className='my-3 flex flex-wrap justify-around items-center'>
                     <p className='text-[#215D4F] font-poppins text-2xl font-medium mr-3 justify-self-start' >Leave Type List</p>
                     <div className='border-b-2 flex w-32 my-3 mx-2'>

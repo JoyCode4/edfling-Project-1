@@ -3,7 +3,7 @@ import correct from "../../images/teacherSide/correct.svg";
 
 const AddLeave = () => {
   return (
-    <div className='my-8 w-full xs:w-4/5 sm:w-1/4'>
+    <div className='my-8 w-full xs:w-4/5 sm:w-2/6'>
         <p className='text-[#215D4F] font-poppins text-2xl font-medium mb-3'>Add leave Type</p>
         <div className='bg-[#F6E9E2] my-1 rounded-lg p-3'>
             <div className='my-2'>

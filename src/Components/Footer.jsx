@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../CSS/Footer.css";
 import logo from "../images/navbar/logo.png";
+import NavbarContext from "../context/Navbar/navbarContext";
+
 export default function Footer() {
+  const {teacherSide}=useContext(NavbarContext);
   return (
     <>
-     
-      <div className="footer-cont w-full flex flex-col items-center pt-5  space-y-2 md:space-y-4 opacity-90">
+      <div className={(!teacherSide)?"footer-cont w-full flex flex-col items-center pt-5  space-y-2 md:space-y-4 opacity-90":"hidden"}>
         {/* logo */}
         <div>
           <img

@@ -1,11 +1,14 @@
-import React from "react";
+import { React,useContext } from "react";
 import { Menu } from "lucide-react";
 import profile from "../../images/page57-61/Ellipse 215.png";
 import arrowDown from "../../images/teacherSide/ArrowDown.svg";
 import search from "../../images/teacherSide/search.svg";
+import NavbarContext from "../../context/Navbar/navbarContext";
 
 const Nav = () => {
+  const {toggle,setToggle}=useContext(NavbarContext);
   const toggleSidebar = () => {
+    setToggle(toggle?false:true);
   };
 
   const toggleNotification = ()=>{}
@@ -15,7 +18,7 @@ const Nav = () => {
     <div className={`flex flex-wrap justify-between items-center font-poppins mt-3 items-center px-4`}>
       <div className="flex gap-3 items-center">
         <div>
-          <button className="" onClick={toggleSidebar}>{<Menu />}</button>
+          <button className="block md:hidden" onClick={toggleSidebar}>{<Menu />}</button>
         </div>
         <div className="hidden md:inline-flex flex gap-3 bg-inherit w-fit px-4 py-1 rounded-2xl shadow-md shadow-black/50">
           <img src={search} alt="img" />
